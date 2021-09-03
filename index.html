@@ -1,168 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
+  <!-- icon   -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link type="text/css" rel="stylesheet" href="css/styles.css">
+
+  <!-- Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <!-- iconos FontAwesome -->
   <script src="https://kit.fontawesome.com/8c2e7c40ab.js" crossorigin="anonymous"></script>
 
-  <!-- font   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,300;0,500;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <!-- Custom Styles  -->
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
+
 
 </head>
 
 <body>
 
+  <!-- header section start -->
   <header class="header">
-    <nav class="header-nav-container">
-      <div class="nav-content">
-        <div class="logo">
-          <img src="images/logo.svg" alt="" class="logo-img">
+    <div class="row">
+      <button type="button" class="nav-toggler">
+        <span></span>
+      </button>
+      <nav class="nav">
+        <div class="nav__flex">
+          <img src="images/logo.svg" alt="logo" class="nav__logo">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Service</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Project</a></li>
+          </ul>
+          <button class="btn btn__white">CONTACT</button>
+          <div class="hamburguer">
+            <i class="fas fa-bars hamburguer_icon"></i>
+          </div>
         </div>
-        <div class="enlaces-nav">
-          <a href="">about</a>
-          <a href="">services</a>
-          <a href="">projects</a>
-          <a href="">contact</a>
+      </nav>
+    </div>
+    <h1 class="header__title">We are creatives</h1>
+    <div class="header__arrow">
+      <img src="images/icon-arrow-down.svg" alt="arrow" class="header__Arrow--icon">
+    </div>
+  </header>
+  <!-- header section end -->
+
+  <!-- main start -->
+  <main>
+
+    <!-- about section start -->
+    <section class="section-about">
+      <div class="section-about__flex">
+        <div class="section-about__content">
+          <h2 class="section-about__title">Transform your <br> brand</h2>
+          <p class="section-about__content--text paragraph">
+            We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <button class="btn btn__black btn__black--1">Learn more</button>
         </div>
-        <!-- <div class="menu-hamburguer">
-        <i class="fas fa-bars icono-menu"></i>
-      </div> -->
+        <div class="section-about__image">
+          <img src="images/desktop/image-transform.jpg" alt="image-transform" class="section-about__image--photo">
+        </div>
       </div>
-    </nav>
-    <section class="header-content">
-      <div class="header-text">
-        <h1 class="header-titulo">We are creatives</h1>
-        <span><img src="./images/icon-arrow-down.svg" alt="arrow-down"></span>
+      <div class="section-about__flex">
+        <div class="section-about__image">
+          <img src="images/desktop/image-stand-out.jpg" alt="image-transform" class="section-about__image--photo">
+        </div>
+        <div class="section-about__content">
+          <h2 class="section-about__title">Stand out to the right<br>audience</h2>
+          <p class="section-about__content--text paragraph">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll build
+            and extend your brand in digital places.
+          </p>
+          <button class="btn btn__black btn__black--2">Learn more</button>
+        </div>
       </div>
     </section>
-  </header>
+    <!-- about section end -->
 
-  <section class="main-content">
-    <div class="main-content-text">
-      <h2 class="main-content-titulo">Transform your brand</h2>
-      <p class="main-content-paragraph">We are a full-service creative agency specializing in helping brands grow fast.
-        Engage your clients through compelling visuals that do most of the marketing for you.
-      </p>
-      <a href="#" class="text-content-enlace">Learn more</a>
-    </div>
-    <div class="main-content-img">
-      <img class="content-img-picture" src="./images/desktop/image-transform.jpg" alt="imagen content">
-    </div>
-    <div class="main-content-img">
-      <img class="content-img-picture" src="./images/desktop/image-stand-out.jpg" alt="imagen content">
-    </div>
-    <div class="main-content-text">
-      <h2 class="main-content-titulo"> Stand out to the right audience</h2>
-      <p class="main-content-paragraph">Using a collaborative formula of designers, researchers, photographers,
-        videographers, and copywriters, we’ll build
-        and extend your brand in digital places.
-      </p>
-      <a href="#" class="text-content-enlace linkpink">Learn more</a>
-    </div>
-    <div class="main-content-img">
-      <img class="content-img-picture" src="./images/desktop/image-graphic-design.jpg " alt="imagen content">
-      <div class="picture-text">
-        <h3 class="picture-title"> Graphic design</h3>
-        <p class="picture-paragraph">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-          potential clients’ attention.</p>
-      </div>
-    </div>
-    <div class="main-content-img">
-      <img class="content-img-picture" src="./images/desktop/image-photography.jpg" alt="imagen content">
-      <div class="picture-text">
-        <h3 class="picture-title"> Photography</h3>
-        <p class="picture-paragraph">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures
-          potential clients’ attention.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="client-testimonial">
-    <h3 class="testimonial-title">Client testimonials</h3>
-    <div class="testimonial-container">
-      <div class="testimonial-item">
-        <div class="testimonial-card">
-          <img src="./images/image-emily.jpg" alt="testimonila image" class="testimonial-img">
-          <p class="testimonial-paragraph"> We put our trust in Sunnyside and they delivered, making sure our needs were
-            met and deadlines were always hit.
+    <!-- ********************************************************************************************
+      service section start (otra forma de hacer la parte del about en contenedores diferentes) -->
+    <!-- <section class="section-services">
+      <div class="section-services__flex">
+        <div class="section-services__image">
+          <img src="images/desktop/image-stand-out.jpg" alt="image-stand-up" class="section-services__image--photo">
+        </div>
+        <div class="section-services__content">
+          <h2 class="section-services__title">Stand out to the right<br>audience</h2>
+          <p class="section-services__content--text paragraph">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll build
+            and extend your brand in digital places.
           </p>
-          <h3 class="testimonial-name">Emily R.</h3>
-          <h5 class="testimonial-role">Marketing Director</h5>
+           <button class="btn btn__black btn__black--2">Learn more</button>
         </div>
       </div>
-      <div class="testimonial-item">
-        <div class="testimonial-card">
-          <img src="./images/image-thomas.jpg" alt="testimonila image" class="testimonial-img">
-          <p class="testimonial-paragraph"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-            success made it a satisfying and enjoyable experience.
-          </p>
-          <h3 class="testimonial-name">Thomas S.</h3>
-          <h5 class="testimonial-role">Chief Operating Officer</h5>
+    </section> -->
+    <!--service section end
+    *************************************************************************************************
+    -->
+
+    <!--Service section start (este si)-->
+    <section class="section-services">
+      <div class="section-services__flex">
+        <div class="section-services__image section-services__image--1">
+          <img src="images/desktop/image-graphic-design.jpg" alt="image-graphic-desig"
+            class="section-services__photo section-services__photo--1">
+          <div class="graphic-textbox">
+            <h3 class="heading-tertiary">Graphic design</h3>
+            <p class="graphic-paragraph">
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+              potential clients’ attention.
+            </p>
+          </div>
+        </div>
+        <div class="section-services__image section-services__image--2">
+          <img src="images/desktop/image-photography.jpg" alt="photography"
+            class="section-services__photo section-services__photo--2">
+          <div class="photography-textbox">
+            <h3 class="heading-tertiary heading-tertiary__pothography">Photography</h3>
+            <p class="photography-paragraph">
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business
+              image.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="testimonial-item">
-        <div class="testimonial-card">
-          <img src="./images/image-jennie.jpg" alt="testimonila image" class="testimonial-img">
-          <p class="testimonial-paragraph">Incredible end result! Our sales increased over 400% when we worked with
-            Sunnyside. Highly recommended!
-          </p>
-          <h3 class="testimonial-name">Jennie F.</h3>
-          <h5 class="testimonial-role">Business Owner</h5>
+    </section>
+    <!--Service section end -->
+
+    <!--Testimonials section start -->
+    <section class="section-testimonials">
+      <h4 class="heading-fourth">Client testimonials</h4>
+      <div class="row">
+        <div class="testimonials__grid">
+          <div class="testimonials__clients">
+            <div class="testimonials__clients--1">
+              <img src="images/image-emily.jpg" alt="emily" class="testimonials__clients--1-photo">
+              <p class="testimonials__clients--1-text">
+                We put our trust in Sunnyside and they <br> delivered, making sure our needs were met <br> and deadlines
+                were
+                always hit.
+              </p>
+              <p class="testimonials__clients--1-name">Emily R.</p>
+              <p class="testimonials__clients--1-role">Marketing Director</p>
+            </div>
+          </div>
+          <div class="testimonials__clients">
+            <div class="testimonials__clients--2">
+              <img src="images/image-thomas.jpg" alt="thomas" class="testimonials__clients--2-photo">
+              <p class="testimonials__clients--2-text">
+                Sunnyside’s enthusiasm coupled with their <br> keen interest in our brand’s success made it <br> a
+                satisfying and
+                enjoyable
+                experience.
+              </p>
+              <p class="testimonials__clients--2-name">Thomas S.</p>
+              <p class="testimonials__clients--2-role">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="testimonials__clients">
+            <div class="testimonials__clients--3">
+              <img src="images/image-jennie.jpg" alt="jennie" class="testimonials__clients--3-photo">
+              <p class="testimonials__clients--3-text">
+                Incredible end result! Our sales increased <br> over 400% when we worked with Sunnyside.<br> Highly
+                recommended!
+              </p>
+              <p class="testimonials__clients--3-name">Jennie F.</p>
+              <p class="testimonials__clients--3-role">Business Owner</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <!--Testimonials section end -->
 
-  <section class="gallery">
-    <div class="gallery-container">
-      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="gallery image" class="img-gallery">
-      <img src="./images/desktop/image-gallery-orange.jpg" alt="gallery image" class="img-gallery">
-      <img src="./images/desktop/image-gallery-cone.jpg" alt="gallery image" class="img-gallery">
-      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="gallery image" class="img-gallery">
-    </div>
-  </section>
+    <!-- Gallegy section start   -->
+    <section class="gallery">
+      <div class="gallery__images">
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" class="gallery__images--1">
+        <img src="images/desktop/image-gallery-orange.jpg" alt="orange" class="gallery__images--2">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="cone" class="gallery__images--3">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" class="gallery__images--4">
+      </div>
+    </section>
+    <!-- Gallegy section end   -->
+  </main>
+  <!-- main end -->
 
+  <!--  footer section start -->
   <footer class="footer">
-    <h3 class="footer-titulo">sunnyside</h3>
-    <div class="footer-nav">
-      <div class="enlaces-container-footer">
-          <a href="#" class="enlace-footer">about</a>
-          <a href="#" class="enlace-footer">services</a>
-          <a href="#" class="enlace-footer">projects</a>
-          <a href="#" class="enlace-footer">contact</a>
-        </div>
-    </div>
-    <div class="social-footer">
-      <a href="#" class="icono-footer"><i class="fab fa-facebook-square"></i></a>
-      <a href="#" class="icono-footer"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="icono-footer"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="icono-footer"><i class="fab fa-github"></i></a>
+    <div class="footer__flex">
+      <h5 class="heading-fifth">sunnyside</h5>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">About</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Services</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Projects</a>
+        </li>
+      </ul>
+      <div class="social">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-github"></i>
+      </div>
     </div>
   </footer>
+  <!-- footer section end -->
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Marco Andres Silva Ponce</a>.
+    Coded by <a href="#">Marco Silva Ponce</a>.
   </div>
-
-  
 </body>
 
 </html>
